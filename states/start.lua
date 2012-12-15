@@ -14,8 +14,10 @@ end
 
 function start:keypressed( key )
 	if key == "escape" then
-		love.event.push('q')
+		love.event.push('quit')
 	else
-		-- do something
+		Gamestate.switch( states.game )
 	end
 end
+
+return start

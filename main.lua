@@ -13,6 +13,8 @@ function love.load()
 	love.mouse.setVisible( false )
 
 	states.start = require "states.start"
+	states.game = require "states.game"
+	
 	Gamestate.registerEvents()
 	Gamestate.switch( states.start )
 

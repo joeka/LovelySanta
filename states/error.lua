@@ -47,12 +47,4 @@ function error:draw()
 	love.graphics.print( text[activeText], math.random( 100,130  ), math.random(200,220),0 , math.random( 10, 20 ), math.random( 10, 20 ))
 end
 
-function error:keypressed( key )
-	if key == "escape" then
-		love.event.push('quit')
-	elseif key == "return" then
-		Gamestate.switch( states.game )
-	end
-end
-
 return error

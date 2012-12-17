@@ -14,6 +14,7 @@ function love.load()
 
 	states.start = require "states.start"
 	states.game = require "states.game"
+	states.error = require "states.error"
 	
 	Gamestate.registerEvents()
 	Gamestate.switch( states.start )
